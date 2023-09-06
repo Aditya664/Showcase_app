@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your App Name</title>
+    <title>Your App Portfolio</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -29,38 +29,77 @@
             padding: 20px;
             background-color: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .app {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
         }
 
         .app-description {
             font-size: 18px;
+            margin-top: 20px;
         }
 
         .download-button {
             display: inline-block;
             background-color: #007BFF;
             color: #fff;
-            padding: 10px 20px;
+            padding: 15px 30px;
             font-size: 20px;
             text-decoration: none;
-            border-radius: 5px;
-            margin-top: 10px;
+            border-radius: 30px;
+            margin-top: 20px;
+            transition: background-color 0.3s;
         }
 
         .download-button:hover {
             background-color: #0056b3;
         }
+
+        .app-image {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .app-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Your App Name</h1>
+        <h1>Your App Portfolio</h1>
     </header>
     <div class="container">
-        <h2>Welcome to Your App</h2>
-        <p class="app-description">
-            This is a brief description of your Android app. You can provide details about its features, benefits, and why users should download it.
-        </p>
-        <a href="your_app.apk" class="download-button">Download Now</a>
+        <div class="app">
+            <h2>App Name 1</h2>
+            <p class="app-description">
+                Description of App 1. You can provide details about its features, benefits, and why users should download it.
+            </p>
+            <div class="app-image">
+                <img src="app1_image.jpg" alt="App 1 Screenshot">
+            </div>
+            <a href="app1.apk" class="download-button">Download Now</a>
+        </div>
+        
+        <div class="app">
+            <h2>App Name 2</h2>
+            <p class="app-description">
+                Description of App 2. You can provide details about its features, benefits, and why users should download it.
+            </p>
+            <div class="app-image">
+                <img src="app2_image.jpg" alt="App 2 Screenshot">
+            </div>
+            <a href="app2.apk" class="download-button">Download Now</a>
+        </div>
+        <!-- Add more app sections as needed -->
     </div>
 </body>
 </html>
